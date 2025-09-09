@@ -67,11 +67,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.host {
-  color: #d4af37;
-  font-weight: 600;
-}
-
 /* FOOTER */
 .site-footer {
   display: flex;
@@ -132,7 +127,7 @@ nav ul li a:hover::after {
   transform: translateY(-2px);
 }
 
-/* 📱 Responsive Design - Header & Footer Only */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     height: 70px;
@@ -159,5 +154,34 @@ nav ul li a:hover::after {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 60px;
+    padding: 5px 15px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    transform: scale(0.12);
+    width: 15%;
+  }
+
+  nav ul {
+    gap: 12px;
+    font-size: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  nav ul li a {
+    padding: 2px 0;
+  }
+
+  .site-footer {
+    padding: 30px 15px;
+    font-size: 12px;
   }
 }
