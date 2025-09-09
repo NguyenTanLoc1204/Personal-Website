@@ -340,9 +340,9 @@ h2 {
 
   .card,
   .intro {
-    max-width: 100%;
-    padding: 30px 25px;
+    max-width: 90%;
     min-height: auto;
+    padding: 30px 25px;
   }
 
   .avatar {
@@ -404,16 +404,40 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  header {
+    height: 60px;
+    padding: 5px 15px;
+    justify-content: space-between; /* logo trái, nav phải */
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    transform: scale(0.12); /* giữ kích thước hợp lý */
+    width: 15%; /* thu nhỏ logo */
+  }
+
+  nav ul {
+    gap: 12px;
+    font-size: 10px;
+    flex-wrap: wrap; /* nếu thiếu chỗ thì tự xuống dòng */
+    justify-content: flex-end;
+  }
+
+  nav ul li a {
+    padding: 2px 0;
+  }
+
+
   .intro h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .avatar {
@@ -423,10 +447,24 @@ h2 {
 
   .card,
   .intro {
-    padding: 25px 20px;
+    width: 100%;       
+    max-width: 90%;    
+    margin: 0 auto;    
+    padding: 18px 12px;
+    box-sizing: border-box; 
+  }
+
+  .intro .description {
+    font-size: 14px;
   }
 
   .profile-card {
+    padding: 15px 10px;
+    gap: 20px;
+  }
+
+  .site-footer {
     padding: 30px 15px;
+    font-size: 12px;
   }
 }
