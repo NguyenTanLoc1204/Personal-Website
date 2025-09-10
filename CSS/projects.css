@@ -67,6 +67,11 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+.host {
+  color: #d4af37;
+  font-weight: 600;
+}
+
 /* FOOTER */
 .site-footer {
   display: flex;
