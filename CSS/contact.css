@@ -67,6 +67,85 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* MAIN*/
+/* Contact Form Container */
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(26, 26, 46, 0.15);
+  max-width: 650px;
+  margin: 50px auto;
+  font-family: "Segoe UI", sans-serif;
+  border-top: 6px solid #d4af37;
+}
+
+/* Title */
+.contact-form h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Form fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d4af37;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+  outline: none;
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+/* Button */
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d4af37, #f4e4a6);
+  color: #1a1a2e;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+  background: linear-gradient(135deg, #f4e4a6, #d4af37);
+}
+
 /* FOOTER */
 .site-footer {
   display: flex;
@@ -179,7 +258,50 @@ nav ul li a:hover::after {
   nav ul li a {
     padding: 2px 0;
   }
+  .contact-form {
+    padding: 25px 18px;
+    margin: 30px 10px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
 
+  .contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .contact-form p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .contact-form textarea {
+    grid-row: 4;
+  }
+
+  .btn-send {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 40px;
+  }
   .site-footer {
     padding: 30px 15px;
     font-size: 12px;
