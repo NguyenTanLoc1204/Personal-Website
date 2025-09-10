@@ -83,9 +83,15 @@ nav ul li a:hover::after {
   margin: 50px auto;
   font-family: "Segoe UI", sans-serif;
   border-top: 6px solid #d4af37;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 
-/* Title */
+.contact-form:hover {
+  transform: translateY(-6px); 
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 
+              0 8px 25px rgba(0, 0, 0, 0.10);
+}
 .contact-form h2 {
   font-size: 32px;
   font-weight: 700;
